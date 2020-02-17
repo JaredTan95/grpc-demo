@@ -1,4 +1,4 @@
-package com.baeldung.grpc.server;
+package com.github.jaredtan95.demo.grpc.server;
 
 import java.io.IOException;
 

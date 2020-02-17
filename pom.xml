@@ -3,26 +3,32 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>grpc-demo</artifactId>
+    <groupId>com.github.jaredtan95.demo.grpc</groupId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>grpc</name>
+    <name>grpc-demo</name>
     <packaging>jar</packaging>
 
+    <properties>
+        <io.grpc.version>1.16.1</io.grpc.version>
+        <os-maven-plugin.version>1.6.1</os-maven-plugin.version>
+        <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
+    </properties>
+
     <dependencies>
-    
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-netty</artifactId>
-            <version>1.16.1</version>
+            <version>${io.grpc.version}</version>
         </dependency>
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-protobuf</artifactId>
-            <version>1.16.1</version>
+            <version>${io.grpc.version}</version>
         </dependency>
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-stub</artifactId>
-            <version>1.16.1</version>
+            <version>${io.grpc.version}</version>
         </dependency>
     </dependencies>
 
@@ -59,10 +65,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <properties>
-        <io.grpc.version>1.16.1</io.grpc.version>
-        <os-maven-plugin.version>1.6.1</os-maven-plugin.version>
-        <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
-    </properties>
 </project>
